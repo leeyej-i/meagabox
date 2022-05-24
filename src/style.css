@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #000000;
+    font-family: "Spoqa Han Sans Neo", "Sans-serif";
+}
+
+a {
+    all: unset;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+div.header {
+    position: absolute;
+    width: 100%;
+    min-width: 1100px;
+    background-color: #000000;
+}
+
+div.head-container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+div.sub-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #888;
+    font-size: 0.82rem;
+    margin-top: 15px;
+}
+
+div.sub-link a:hover {
+    text-decoration: underline;
+}
+
+div.left-link a {
+    margin-right: 1rem;
+}
+
+div.right-link a {
+    margin-left: 1rem;
+}
+
+div.main-link {
+    margin-top: -20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+div.main-link a {
+    font-size: 1.1rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    height: 36px;
+    padding-bottom: 5px;
+}
+
+div.main-left-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.main-left-link a {
+    margin-left: 50px;
+}
+
+div.main-right-link a {
+    margin-right: 50px;
+}
+
+div.main-right-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a.main-logo {
+    margin: auto auto;
+    display: block;
+    margin-top: -10px;
+    width: 140px;
+    height: 47px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/ci/logo-white_new2.png);
+
+}
+
+span.icon-left-box {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+span.icon-right-box {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+span.icon-right-box a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin-right: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+span.icon-left-box a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin-left: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+a.header-menu-icon {
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-sitemap-white.png);
+}
+
+a.header-search-icon {
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-search-white.png);
+}
+
+a.header-calender-icon {
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-schedule-white.png);
+}
+
+a.header-my-box-icon {
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-mymega-white.png);
+}
