@@ -16,6 +16,10 @@ a:hover {
     cursor: pointer;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 div.header {
     position: absolute;
     top: 0%;
@@ -148,14 +152,13 @@ a.header-my-box-icon {
 div.main {
     width: 100%;
     min-width: 1100px;
-    max-height: 701px;
 }
 
 div.main-image {
     position: absolute;
     width: 100%;
     min-width: 1100px;
-    height: 100%;
+    height: 900px;
     background-repeat: no-repeat;
     background-image: url(https://img.megabox.co.kr/SharedImg/2022/05/12/L3TMSlaj2iGY7RcGytRyVuWMs7V8oCwW_380.jpg);
     filter: brightness(20%);
@@ -165,7 +168,7 @@ div.main-image {
 div.main-bg {
     position: relative;
     min-width: 1100px;
-    height: 100vh;
+    height: 900px;
     background: url(https://www.megabox.co.kr/static/pc/images/movie/bg-movie-detail-pattern.png) repeat 0 0;
     z-index: 2;
 }
@@ -408,6 +411,214 @@ div.main-mouse-icon img {
     display: block;
     margin: auto auto;
     animation: move_img 2s linear infinite;
+}
+
+div.session1 {
+    position: relative;
+    background-color: #fff;
+}
+
+div.session1-container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+div.benefit-slide {
+    width: 60%;
+}
+
+div.benefit-box {
+    display: flex;
+    height: 325px;
+    flex-direction: row;
+}
+
+div.benefit-title-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+span.more-benefit img {
+    margin-top: 2rem;
+}
+
+div.slide-item {
+    display: flex;
+    flex-direction: row;
+}
+
+div.slide-bar {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+div.slide-page-bar {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 2px;
+    margin: auto 0;
+}
+
+span.slide-page-bar-item {
+    display: block;
+    width: 12.5%;
+    height: 100%;
+    background-color: rgb(190, 188, 188);
+}
+
+span.slide-page-bar-item-on {
+    display: block;
+    width: 12.5%;
+    height: 100%;
+    background-color: rgb(83, 100, 153);
+}
+
+div.slide-btn-box {
+    margin: auto 0;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+#slide-prev {
+    display: block;
+    margin-top: 4px;
+    width: 10px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    background-image: url('https://www.megabox.co.kr/static/pc/images/main/btn-benefit-slider-prev.png');
+    background-repeat: no-repeat;
+}
+
+#slide-prev-off {
+    display: block;
+    margin-top: 4px;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: none;
+    background-image: url('https://www.megabox.co.kr/static/pc/images/main/btn-benefit-slider-prev.png');
+    background-repeat: no-repeat;
+    filter: opacity(0.4) drop-shadow(0 0 0 #0000);
+}
+
+#slide-next {
+    width: 10px;
+    height: 20px;
+    margin-top: 4px;
+    background-color: transparent;
+    border: none;
+    background-image: url('https://www.megabox.co.kr/static/pc/images/main/btn-benefit-slider-next.png');
+    background-repeat: no-repeat;
+}
+
+#slide-next-off {
+    display: block;
+    margin-top: 4px;
+    width: 10px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    background-image: url('https://www.megabox.co.kr/static/pc/images/main/btn-benefit-slider-next.png');
+    background-repeat: no-repeat;
+    filter: opacity(0.4) drop-shadow(0 0 0 #0000);
+}
+
+#slide-move {
+    width: 10px;
+    height: 20px;
+    margin-top: 4px;
+    background-color: transparent;
+    border: none;
+    background-image: url('https://www.megabox.co.kr/static/pc/images/main/btn-benefit-slider-pause.png');
+    background-repeat: no-repeat;
+}
+
+#slide-stop {
+    width: 10px;
+    height: 20px;
+    margin-top: 4px;
+    background-color: transparent;
+    border: none;
+    background-image: url(' https://www.megabox.co.kr/static/pc/images/main/btn-benefit-slider-play.png');
+    background-repeat: no-repeat;
+}
+
+div.benefit-box2 {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    position: relative;
+    z-index: 2;
+}
+
+a.benefit-big-img-a {
+    width: 40%;
+    z-index: 2;
+}
+
+img.beneift-big-img {
+    width: 100%;
+    height: 520px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+div.benefit-box2 a {
+    display: block;
+}
+
+a.benefit-img-a {
+    display: block;
+    width: 65%;
+}
+
+img.benefit-img {
+    width: 100%;
+    box-shadow: 10px 10px 10px 0px rgba(25, 42, 70, 0.2);
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+}
+
+img.benefit-img2 {
+    width: 100%;
+    float: left;
+    box-shadow: 10px 10px 10px 0px rgba(25, 42, 70, 0.2);
+    border-radius: 5px 5px 5px 5px;
+}
+
+a.benefit-img-a2 {
+    margin: 0 auto;
+    width: 30%;
+}
+
+div.benefit-menu {
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 2;
+    color: #fff;
+}
+
+div.benefit-menu-item img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+div.session1-bg2 {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    min-width: 1100px;
+    height: 250px;
+    background-color: #2951c0;
 }
 
 @keyframes move_img {
