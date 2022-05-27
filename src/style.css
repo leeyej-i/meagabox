@@ -597,7 +597,7 @@ a.benefit-img-a2 {
 
 div.benefit-menu {
     margin-top: 5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 6rem;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -617,8 +617,155 @@ div.session1-bg2 {
     bottom: 0%;
     width: 100%;
     min-width: 1100px;
-    height: 250px;
-    background-color: #2951c0;
+    height: 320px;
+    background-color: #6a29c0;
+}
+
+div.session2 {
+    width: 100%;
+    min-width: 1100px;
+    position: relative;
+    background-color: #12116b;
+}
+
+div.session2-container {
+    width: 1100px;
+    margin: 0 auto;
+    color: #fff;
+    padding-bottom: 150px;
+}
+
+div.curation-title-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+span.more-curation {
+    font-weight: 100;
+    padding-top: 50px;
+}
+
+span.more-curation a span {
+    margin-right: 5px;
+}
+
+span.more-curation a img {
+    margin: auto 0;
+    filter: opacity(0.5) drop-shadow(0 0 0 #fff);
+}
+
+div.curation-title-box h1 {
+    font-weight: normal;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+div.curation-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.curation-left-box {
+    width: 30%;
+    position: relative;
+    padding: 20px;
+}
+
+div.curation-left-box a img {
+    width: 100%;
+    border-radius: 5px 5px 5px 5px;
+}
+
+div.cur-mark1 img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div.curation-btn {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#more-info-btn {
+    font-size: 1.2rem;
+    color: #fff;
+    width: 48%;
+    height: 50px;
+    border-radius: 3px 3px 3px 3px;
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+
+#cur-book-btn {
+    font-size: 1.2rem;
+    color: #fff;
+    width: 49%;
+    height: 50px;
+    margin-left: 2px;
+    border-radius: 3px 3px 3px 3px;
+    border: none;
+    background-color: rgb(20, 130, 173)
+}
+
+div.curation-right-box {
+    padding-top: 15px;
+    width: 67%;
+}
+
+div.cur-sub-title {
+    font-size: 1.2rem;
+}
+
+div.cur-main-title {
+    font-size: 2.3rem;
+    padding-bottom: 30px;
+    border-bottom: 0.1px solid #888;
+}
+
+div.cur-info {
+    line-height: 1.5rem;
+    font-size: 0.85rem;
+}
+
+div.cur-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.cur-list-item {
+    position: relative;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+div.cur-list-item img {
+    border-radius: 5px 5px 5px 5px;
+}
+
+div.cur-mark2 img {
+    display: block;
+    position: absolute;
+
+    top: 0%;
+    left: 0%;
+}
+
+div.cur-list-item-title {
+    width: 163px;
+    padding-top: 5px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+
 }
 
 @keyframes move_img {
