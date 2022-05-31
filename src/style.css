@@ -24,17 +24,131 @@ h1 {
     font-size: 1.8rem;
 }
 
-div.header {
-    position: absolute;
-    top: 0%;
+header {
     width: 100%;
     min-width: 1100px;
-    border-bottom: 0.1px solid #888;
+    z-index: 5;
     background-color: #000000;
+}
+
+div.header-menu-opened1 {
+    display: block;
+    margin: auto;
+    position: absolute;
+    height: 40px;
+    width: 1100px;
+    bottom: -40%;
+    padding-top: 10px;
+    left: 10%;
+    font-weight: 200;
+    background-color: transparent;
+    color: #fff;
     z-index: 5;
 }
 
+div.header-menu-opened1 a {
+    margin-right: 2%;
+}
+
+div.header-menu-opened2 {
+    position: absolute;
+    display: flex;
+    height: 40px;
+    width: 1100px;
+    bottom: -40%;
+    padding-top: 10px;
+    left: 15%;
+    font-weight: 200;
+    background-color: transparent;
+    color: #fff;
+    z-index: 5;
+}
+
+div.header-menu-opened2 a {
+    margin-right: 2%;
+}
+
+div.header-menu-opened3 {
+    position: absolute;
+    display: flex;
+    height: 40px;
+    width: 1100px;
+    bottom: -40%;
+    padding-top: 10px;
+    left: 25%;
+    font-weight: 200;
+    background-color: transparent;
+    color: #fff;
+    z-index: 5;
+}
+
+div.header-menu-opened3 a {
+    margin-right: 2%;
+}
+
+div.header-menu-opened4 {
+    margin: 0 auto;
+    position: absolute;
+    display: flex;
+    height: 40px;
+    width: 1100px;
+    bottom: -40%;
+    padding-top: 10px;
+    left: 60%;
+    font-weight: 200;
+    background-color: transparent;
+    color: #fff;
+    z-index: 5;
+}
+
+div.header-menu-opened4 a {
+    margin-right: 2%;
+}
+
+div.header-menu-opened5 {
+    position: absolute;
+    display: flex;
+    height: 40px;
+    width: 1100px;
+    bottom: -40%;
+    padding-top: 10px;
+    left: 80%;
+    font-weight: 200;
+    background-color: transparent;
+    color: #fff;
+    z-index: 5;
+}
+
+div.header-menu-opened5 a {
+    margin-right: 2%;
+}
+
+div.header-menu-opened5 a:hover {
+    text-decoration: underline;
+}
+
+div.header-menu-opened4 a:hover {
+    text-decoration: underline;
+}
+
+div.header-menu-opened3 a:hover {
+    text-decoration: underline;
+}
+
+div.header-menu-opened2 a:hover {
+    text-decoration: underline;
+}
+
+div.header-menu-opened1 a:hover {
+    text-decoration: underline;
+}
+
+div.header {
+    border-bottom: 0.1px solid #888;
+}
+
 div.head-container {
+    position: relative;
     width: 1100px;
     margin: 0 auto;
 }
@@ -45,7 +159,7 @@ div.sub-link {
     justify-content: space-between;
     color: #888;
     font-size: 0.82rem;
-    margin-top: 15px;
+    padding-top: 15px;
 }
 
 div.sub-link a:hover {
@@ -85,6 +199,10 @@ div.main-left-link {
 
 div.main-left-link a {
     margin-left: 50px;
+}
+
+div.main-left-link a:hover {
+    border-bottom: 2px solid #fff;
 }
 
 div.main-right-link a {
@@ -185,7 +303,7 @@ div.main-container {
 div.main-top {
     display: flex;
     flex-direction: row;
-    padding-top: 170px;
+    padding-top: 100px;
     width: 100%;
     margin-bottom: 25px;
 }

@@ -27,7 +27,6 @@ const Benefit = () => {
 
     useInterval(
         () => {
-            console.log(slideNum);
             setSlideNum(slideNum + 1 === 8 ? 0 : slideNum + 1);
         },
         move ? 3000 : null
