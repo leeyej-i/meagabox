@@ -79,23 +79,34 @@ const Benefit = () => {
         "https://img.megabox.co.kr/SharedImg/BnftMng/2022/05/19/pATmXt3mU6XP9F2hYWslUkpllWa1cxJ4.png",
         "https://img.megabox.co.kr/SharedImg/BnftMng/2022/01/14/yDRjd4ejz8oirC4wLrukvHK3KIWH1tCY.jpg",
         "https://img.megabox.co.kr/SharedImg/BnftMng/2021/02/01/fZ8glF2ggujTRrF5vtRuE1iE2UjjV1oF.jpg"]
+    const target1 = useRef(null);
+    const target2 = useRef(null);
+    useEffect(() => {
+        target1.current.classList.remove("animatedItemUp");
+        void target1.current.offsetWidth;
+        target1.current.classList.add("animatedItemUp");
+
+        target2.current.classList.remove("animatedItemLeft");
+        void target2.current.offsetWidth;
+        target2.current.classList.add("animatedItemLeft");
+    }, [slideNum])
 
     return (
         <div className='session1'>
             <div className='session1-container'>
                 <div className='benefit-title-box'>
                     <h1>혜택</h1>
-                    <span className='more-benefit'>
+                    <div className='more-benefit'>
                         <a href='#' title='더 많은 영화보기'>
                             <img src="https://img.megabox.co.kr/static/pc/images/common/btn/btn-more-cross-purple.png" />
                         </a>
-                    </span>
+                    </div>
                 </div>
                 <div className='benefit-box'>
                     <div className='benefit-slide'>
                         <div className='slide-item'>
-                            <div className='slide-item-left'>
-                                <a href='#'><img src={bfImg1[slideNum]} /></a>
+                            <div className='slide-item-left' >
+                                <a href='#'><img src={bfImg1[slideNum]} ref={target1} className='animatedItemUp' /></a>
                                 <div className='slide-bar'>
                                     <div className='slide-page-bar'>
                                         {active[0] === false ? <span className='slide-page-bar-item'></span> : <span className='slide-page-bar-item-on'></span>}
@@ -116,7 +127,7 @@ const Benefit = () => {
                                 </div>
                             </div>
                             <div className='slide-item-right'>
-                                <a href='#'><img src={bfImg2[slideNum]} /></a>
+                                <a href='#'><img src={bfImg2[slideNum]} ref={target2} className="animatedItemLeft" /></a>
                             </div>
                         </div>
                     </div>

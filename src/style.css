@@ -1173,9 +1173,42 @@ div.footer-icon-box a {
     margin-right: 5px;
 }
 
+img.animatedItemUp {
+    animation-name: slide-up;
+    animation-duration: 0.5s;
+
+}
+
+img.animatedItemLeft {
+    animation-name: slide-left;
+    animation-duration: 0.5s;
+
+}
 
 @keyframes move_img {
     50% {
         transform: translateY(-15px);
     }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(50%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
 }
